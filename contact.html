@@ -3,78 +3,83 @@
 <html lang="en-us">
 
 <head>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width-divce-width, initial-scale=1.0">
+	<meta http-equiv ="X-UA Compatible" content="ie-edge">
+
+	<title>Bootstrap Basic Portfolio</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 
+	<link rel="stylesheet" href="css/style.css" media="screen">
+
 </head>
+<body>
 
-	
-	<nav class="navbar navbar-light bg-white">
-		<span class="navbar-brand mb-0 h1 text-white bg-info">Mary Doucet</span>
-		<ul class="nav justify-content-end">
-			<li class="nav-item">
-				<a class="nav-link text-secondary" href="index.html">About</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-secondary" href="contact.html">Contact</a>
-			</li>
-			<li class="nav-item">
-				<a class="nav-link text-secondary" href="portfolio.html">Portfolio</a>
-			</li>
-		</ul>
-	</nav>
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1" id="logo">Mary Doucet</span>
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="about.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="portfolio.html">Portfolio</a>
+  </li>
+</ul>
+</nav>
 
-<div class="container">
-	<div class="row">
-    <div class="col-md-7">
-    	<div class="pageheader">
-    		<h1 class="text-info">Contact</h1>
-    	</div>
-			<div class="row">
-				<div class="col-md-9">
-					<form>
-						<div class="form-group">
-							<label for ="exampleInputName1">Name</label>
-							<input type="Name" class="form-control" id="exampleInputName1" placeholder="First & Last Name">
-							<label for="exampleInputEmail1">Email address</label>
-							<input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
-						</div>
-						<div class="form-group">
-							<label for="exampleFormControlTextarea1">Message</label>
-							<textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-						</div>
 
-					</form>
-							<button type="submit" class="btn btn-primary">Submit</button>
-				</div>
-			</div>
-	</div>
-			 <div class="col-md-5">
-				<div class="card w-50">
-					<div class="card-body">
-							<h4 class="card-title text-info">Connect with Me</h4>
-							<div class="container">
-								<div class="row">
-									<div class="col-md-4">
-										<img class="card-img-bottom" src="images/githublink.png" alt="">
-									</div>
-									<div class="col-md-4">
-										<img class="card-img-bottom" src="images/linkedin.png" alt="">
-									</div>
-									<div class="col-md-4">
-										<img class="card-img-bottom" src="images/stackedoverflow.png" alt="">
-									</div>
-								</div>
-							</div>
+<div class="wrap">
+	<div class="container">
+		<section class="row">
+			<div class="col-md-8">
+				<form class ="contact-form">
+					<h1 class="contact-form-header">Contact</h1>
+					<hr class="contact-hr"/>
+					<div class="form-group">
+						<label class ="label-name" for="name">Name</label>
+						<input type="Name" id="name_input" name="user_name">
 					</div>
-				</div>
+					<div class="form-group">
+						<label class="label-mail" for="mail">Email</label>
+						<input type="email" id="mail_input" name="user_mail"> 
+					</div>		
+					<div class="form-group">
+						<label class="label-msg" for="msg">Message</label><br />
+						<textarea name="user_message_input" id="msg" cols=600></textarea>
+					</div>
+					<button class="btn btn-primary">Submit</button>
+				</form>
 			</div>
+			<div class="col-md-4">
+				<section id="connect-with-me-area">
+					<div class="connect-with-me-conent">
+						<h1 class="connect-with-me-header text-info">Connect with Me</h1>
+						<hr />
+						<div id="images">
+							
+							<img src="images/githublink.png" alt="" class="connect-with-me-photo">			
+							<img class="connect-with-me-photo" src="images/linkedin.png" alt="">				
+							<img class="connect-with-me-photo" src="images/stackedoverflow.png" alt="">
+						</div>
+					</div>
+				</section>
+			</div>
+		</section>
+	</div>
+</div>
 
 
-
-<footer class="fixed-bottom footer footer-light bg-light">
-  <div class="container text-center">Copyright 2017 Mary Doucet</div>
+<footer class="footer">
+	<div class="two-toned-footer-color"></div>
+	<p class="text-muted text-muted-footer text-center">
+	&copy; Copyright 2017 Mary Doucet</p>
 </footer>
 
-		</body>
+</body>
 
-		</html>
+</html>

@@ -2,124 +2,135 @@
 <html lang="en-us">
 
 <head>
+
+
+	<meta charset="UTF-8">
+	<meta name="viewport" contect="width=device-width, initial scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+	<title>Bootstrap Basic Portfolio</title>
+
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
+<body>
 
-<nav class="navbar navbar-light bg-white">
-	<span  class="navbar-brand mb-0 h1 text-white bg-info">Mary Doucet</span>
-	<ul class="nav justify-content-end">
-		<li class="nav-item">
-			<a class="nav-link text-secondary" href="index.html">About</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link text-secondary" href="contact.html">Contact</a>
-		</li>
-		<li class="nav-item">
-			<a class="nav-link text-secondary" href="portfolio.html">Portfolio</a>
-		</li>
-	</ul>
+	
+  
+<nav class="navbar navbar-light bg-light">
+  <span class="navbar-brand mb-0 h1" id="logo">Mary Doucet</span>
+<ul class="nav justify-content-end">
+  <li class="nav-item">
+    <a class="nav-link" href="index.html">About</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="contact.html">Contact</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" href="portfolio.html">Portfolio</a>
+  </li>
+</ul>
 </nav>
-<div class= "container bg-light">
-	<div class="row">
-		<div class="col-md-7">
-			<div class="pageheader">
-				<h1 class="text-info">Portfolio</h1>
-			</div>
-		</div>
 
-		
-	<div class="col-md-5">
-			<div class="card w-50">
-				<div class="card-body">
-					<h4 class="card-title text-info">Connect with Me</h4>
-					<div class="container">
+<div class= "wrap">
+	<div class="container">
+		<section class="row">
+			<div class="col-md-7">
+
+				<section id="portfolio-area">
+					<h1 class="port-header">Portfolio</h1>
+					<hr class="port-hr">
+					<div class="container bg-light">
 						<div class="row">
-							<div class="col-md-4">
-								<img class="card-img-bottom" src="images/githublink.png" alt="">
+							<div class="col-md-6">
+								<div class="port-imgs">
+									<a href="images/deer.jpg">
+										<img src="images/deer.jpg" alt="deer">
+										<div class="caption">
+											<p class="text-white bg-info text-center" style="width:100%">Hangman</p>
+										</div>
+									</a>
+								</div>
 							</div>
-							<div class="col-md-4">
-								<img class="card-img-bottom" src="images/linkedin.png" alt="">
-							</div>
-							<div class="col-md-4">
-								<img class="card-img-bottom" src="images/stackedoverflow.png" alt="">
+							<div class="col-md-6">
+								<div class="port-imgs">
+									<a href="images/pig.jpg">
+										<img src="images/pig.jpg" alt="pig">
+										<div class="caption">
+											<p class="text-white bg-info text-center" style="width:100%">RPG Game</p>
+										</div>
+									</a>
+								</div>
 							</div>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-</div>
-</div>
-	<div class="container bg-light">
-				<div class="row">
-					<div class="col-md-6">
-						<div class="thumbnail">
-							<a href="images/deer.jpg">
-								<img src="images/deer.jpg" alt="deer" style="width:50%">
-								<div class="caption">
-									<p class="text-white bg-info text-center"  style="width:50%">Hangman</p>
+						<div class="row">
+							<div class="col-md-6">
+								<div class="port-imgs">
+									<a href="https://medoucet720.github.io/TriviaGame">
+										<img src="images/puppy.jpg" alt="puppy">
+										<div class="caption">
+											<p class="text-white bg-info text-center" style="width:100%">Trivia Game</p>
+										</div>
+									</a>
 								</div>
-							</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<a href="images/pig.jpg">
-							<img src="images/pig.jpg" alt="pig" style="width:50%">
-							<div class="caption">
-								<p class="text-white bg-info text-center"  style="width:50%">RPG Game</p>
 							</div>
-						</a>
-					</div>
-				</div>
+
+							<div class="col-md-6">
+								<div class="port-imgs">
+									<a href="https://medoucet720.github.io/GifTastic">
+										<img src="images/tiger.jpg" alt="tiger">
+										<div class="caption">
+											<p class="text-white bg-info text-center" style="width:100%">GifTastic</p>
+										</div>
+									</a>
+								</div>
+							</div>
+							<div class="col-md-6">
+								<div class="port-imgs">
+									<a href=" https://medoucet720.github.io/TrainTime/">
+										<img src="images/lefteye.jpg" alt="lefteye">
+										<div class="caption">
+											<p class="text-white bg-info text-center" style="width:100%">TrainTime</p>
+										</div>
+									</a>
+								</div>
+							</div>
+					
+						</div>
+
+
+
+				</section>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<a href="https://medoucet720.github.io/TriviaGame">
-							<img src="images/puppy.jpg" alt="puppy" style="width:50%">
-							<div class="caption">
-							<p class="text-white bg-info text-center"  style="width:50%">Trivia Game</p>
-							</div>
-						</a>
-					</div>
-				</div>
 
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<a href="https://medoucet720.github.io/GifTastic">
-							<img src="images/tiger.jpg" alt="tiger" style="width:50%">
-							<div class="caption">
-							<p class="text-white bg-info text-center"  style="width:50%">GifTastic</p>
-							</div>
-						</a>
+			<div class="col-md-5">
+				<section id="connect-with-me-area">
+					<div class="connect-with-me-content">
+						<h1 class="connect-with-me-header text-info">Connect with Me</h1>
+						<hr />
+						<div id="images">
+
+							<img src="images/githublink.png" alt="" class="connect-with-me-photo">			
+							<img class="connect-with-me-photo" src="images/linkedin.png" alt="">				
+							<img class="connect-with-me-photo" src="images/stackedoverflow.png" alt="">
+						</div>
 					</div>
-				</div>
+				</section>
 			</div>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="thumbnail">
-						<a href="images/lefteye.jpg">
-							<img src="images/lefteye.jpg" alt="lefteye" style="width:50%">
-							<div class="caption">
-								<p class="text-white bg-info text-center"  style="width:50%">Rock Paper Scissors
-								</p>
-							</div>
-						</a>
-					</div>
-				</div>
-				<div class="col-md-6">
-				</div>
-				<br>
-				<br>
-			</div>
-		</div>
+		</section>
+	</div>
+</div>
 
 
-		<footer class="fixed-bottom footer footer-light bg-light">
-			<div class="container text-center">Copyright 2017 Mary Doucet</div>
-		</footer>
 
-	</body>
+<footer class="footer">
+	<div class="two-toned-footer-color"></div>
+	<p class="text-muted text-muted-footer text-center">
+	&copy; Copyright 2017 Mary Doucet</p>
+</footer>
 
-	</html>
+
+</body>
+
+</html>
